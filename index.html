@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lembu Sapodio — Lembu Pilihan, Terus Dari Ladang</title>
+<meta name="description" content="Lembu Sapodio: lembu korban, akikah dan baka yang sihat, gemuk dan disahkan doktor veterinar. Pilih online, beli terus melalui WhatsApp.">
+<meta property="og:title" content="Lembu Sapodio — Lembu Pilihan, Terus Dari Ladang">
+<meta property="og:description" content="Lembu korban, akikah & baka. Sihat, gemuk, halal. Tempah terus melalui WhatsApp.">
+<meta property="og:image" content="/icon-512.png">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#C96A1B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1d1d1f; --ink-2:#6e6e73; --bg:#fbfbfd; --card:#fff; --soft:#f5f5f7; --line:#e8e8ed;
+  --brand:#C96A1B; --brand-2:#E8913F; --green:#25D366; --radius:28px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display",Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.5}
+img,video{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+h1,h2,h3{letter-spacing:-.025em;line-height:1.05;font-weight:700}
+.eyebrow{font-size:14px;font-weight:600;color:var(--brand);letter-spacing:.02em}
+.grad{background:linear-gradient(90deg,var(--brand),#f2b25c);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* nav */
+nav{position:sticky;top:0;z-index:50;background:rgba(251,251,253,.72);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(0,0,0,.06)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+.logo{display:flex;align-items:center;gap:8px;font-weight:700;font-size:18px;letter-spacing:-.02em}
+.logo svg{width:30px;height:30px;color:var(--ink)}
+.logo small{font-weight:500;color:var(--ink-2);font-size:12px;display:block;line-height:1;letter-spacing:0}
+.links{display:flex;gap:28px;font-size:14px;color:var(--ink-2)}
+.links a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;font-weight:600;font-size:15px;padding:12px 22px;transition:transform .2s,background .2s,opacity .2s}
+.btn:active{transform:scale(.97)}
+.btn-wa{background:var(--green);color:#fff}
+.btn-wa:hover{background:#1fbe5a}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-light{background:rgba(255,255,255,.16);color:#fff;backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.3)}
+.btn-sm{padding:8px 16px;font-size:13px}
+.wa-ico{width:18px;height:18px;flex:none}
+
+/* hero */
+.hero{position:relative;height:min(92vh,860px);min-height:560px;color:#fff;overflow:hidden;background:#111}
+.hero video{position:absolute;inset:0;opacity:.75}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,.1) 40%,rgba(0,0,0,.75) 100%)}
+.hero-in{position:relative;z-index:1;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;text-align:center;padding-bottom:9vh}
+.pill{display:inline-flex;gap:8px;align-items:center;font-size:13px;font-weight:500;padding:6px 14px;border-radius:999px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);backdrop-filter:blur(10px);margin-bottom:22px}
+.hero h1{font-size:clamp(44px,8vw,96px);font-weight:800}
+.hero p{font-size:clamp(17px,2vw,22px);color:rgba(255,255,255,.85);max-width:620px;margin:18px auto 30px}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+
+/* trust strip */
+.strip{display:flex;justify-content:center;gap:clamp(18px,5vw,64px);flex-wrap:wrap;padding:28px 20px;font-size:14px;color:var(--ink-2);border-bottom:1px solid var(--line)}
+.strip span{display:flex;gap:8px;align-items:center;font-weight:500}
+
+section{padding:110px 0}
+.head{text-align:center;max-width:720px;margin:0 auto 56px}
+.head h2{font-size:clamp(36px,5.5vw,64px);margin-top:10px}
+.head p{font-size:19px;color:var(--ink-2);margin-top:16px}
+
+/* bento */
+.bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:240px;gap:16px;grid-auto-flow:dense}
+.tile{position:relative;border-radius:var(--radius);overflow:hidden;background:var(--card);padding:28px;display:flex;flex-direction:column;box-shadow:0 1px 0 rgba(0,0,0,.03);transition:transform .4s cubic-bezier(.2,.8,.2,1)}
+.tile:hover{transform:translateY(-4px)}
+.tile .ico{font-size:30px;line-height:1;margin-bottom:auto}
+.tile h3{font-size:24px;margin-top:14px}
+.tile p{color:var(--ink-2);font-size:15px;margin-top:8px}
+.tile.media{padding:0;color:#fff}
+.tile.media>video,.tile.media>img{position:absolute;inset:0}
+.tile.media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(0,0,0,.7))}
+.tile.media .cap{position:relative;z-index:1;margin-top:auto;padding:28px}
+.tile.media .cap p{color:rgba(255,255,255,.82)}
+.t-big{grid-column:span 2;grid-row:span 2}
+.t-big h3{font-size:36px}
+.t-wide{grid-column:span 2}
+.t-tall{grid-row:span 2}
+.t-dark{background:var(--ink);color:#fff}
+.t-dark p{color:#a1a1a6}
+.t-brand{background:linear-gradient(140deg,var(--brand),var(--brand-2));color:#fff}
+.t-brand p{color:rgba(255,255,255,.85)}
+.stat{font-size:64px;font-weight:800;letter-spacing:-.04em;line-height:1}
+
+/* koleksi */
+#koleksi{background:var(--soft)}
+.chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:36px}
+.chip{padding:9px 18px;border-radius:999px;background:#fff;font-size:14px;font-weight:500;color:var(--ink-2);border:1px solid var(--line);transition:.2s}
+.chip:hover{color:var(--ink)}
+.chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.cow{background:#fff;border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s;animation:pop .5s both}
+.cow:hover{transform:translateY(-6px);box-shadow:0 24px 50px -20px rgba(0,0,0,.18)}
+@keyframes pop{from{opacity:0;transform:translateY(16px)}}
+.cow .ph{position:relative;aspect-ratio:4/3;overflow:hidden;cursor:zoom-in;background:var(--soft)}
+.cow .ph img{transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.cow:hover .ph img{transform:scale(1.06)}
+.tag{position:absolute;top:14px;left:14px;font-size:12px;font-weight:600;padding:5px 11px;border-radius:999px;background:rgba(255,255,255,.9);backdrop-filter:blur(8px)}
+.no{position:absolute;top:14px;right:14px;font-size:11px;font-weight:600;color:#fff;background:rgba(0,0,0,.45);padding:4px 9px;border-radius:999px}
+.cow .bd{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+.cow .breed{font-size:13px;color:var(--brand);font-weight:600}
+.cow h3{font-size:24px;margin:4px 0 12px}
+.specs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px}
+.specs span{font-size:12.5px;background:var(--soft);padding:5px 10px;border-radius:999px;color:#424245}
+.cow .foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.price{font-size:22px;font-weight:700;letter-spacing:-.02em}
+.price small{display:block;font-size:11px;font-weight:500;color:var(--ink-2);letter-spacing:0}
+.pager{display:flex;justify-content:center;align-items:center;gap:8px;margin-top:44px}
+.pager button{min-width:42px;height:42px;border-radius:999px;background:#fff;border:1px solid var(--line);font-weight:600;font-size:14px;transition:.2s}
+.pager button:hover:not(:disabled){border-color:var(--ink)}
+.pager button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.pager button:disabled{opacity:.35;cursor:default}
+.count{text-align:center;color:var(--ink-2);font-size:13px;margin-top:14px}
+
+/* film */
+.film{position:relative;height:80vh;min-height:480px;overflow:hidden;color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;padding:0}
+.film video{position:absolute;inset:0}
+.film::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.45)}
+.film .in{position:relative;z-index:1;padding:20px}
+.film h2{font-size:clamp(40px,7vw,84px);font-weight:800}
+.film p{font-size:20px;color:rgba(255,255,255,.85);margin-top:16px}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.step{background:var(--soft);border-radius:var(--radius);padding:36px 30px}
+.step .n{width:44px;height:44px;border-radius:14px;background:#fff;display:grid;place-items:center;font-size:22px;margin-bottom:26px;box-shadow:0 4px 14px rgba(0,0,0,.06)}
+.step h3{font-size:24px}
+.step p{color:var(--ink-2);margin-top:8px}
+
+/* testi */
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.quote{background:#fff;border-radius:var(--radius);padding:30px;border:1px solid var(--line)}
+.quote p{font-size:17px;line-height:1.55}
+.quote .who{margin-top:20px;font-size:14px;color:var(--ink-2);display:flex;gap:10px;align-items:center}
+.quote .av{width:36px;height:36px;border-radius:50%;background:var(--soft);display:grid;place-items:center;font-size:18px}
+.stars{color:#f5a623;letter-spacing:2px;margin-bottom:12px}
+
+/* faq */
+.faq{max-width:760px;margin:0 auto}
+details{border-bottom:1px solid var(--line);padding:22px 4px}
+summary{font-size:19px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:24px;font-weight:400;color:var(--ink-2);transition:transform .3s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--ink-2);margin-top:12px;font-size:16px}
+
+/* cta */
+.cta{margin:0 20px 110px;border-radius:40px;background:radial-gradient(120% 140% at 10% 0%,#3a2414 0%,var(--ink) 55%);color:#fff;text-align:center;padding:100px 24px;overflow:hidden;position:relative}
+.cta svg.big{width:90px;height:90px;color:var(--brand-2);margin:0 auto 24px}
+.cta h2{font-size:clamp(36px,6vw,68px)}
+.cta p{color:#a1a1a6;font-size:19px;margin:16px auto 32px;max-width:560px}
+
+footer{border-top:1px solid var(--line);padding:40px 0 60px;font-size:13px;color:var(--ink-2)}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+
+/* modal */
+dialog{border:0;border-radius:32px;padding:0;max-width:880px;width:calc(100% - 32px);margin:auto;overflow:hidden;box-shadow:0 40px 120px rgba(0,0,0,.35)}
+dialog::backdrop{background:rgba(0,0,0,.5);backdrop-filter:blur(8px)}
+dialog[open]{animation:zoom .35s cubic-bezier(.2,.8,.2,1)}
+@keyframes zoom{from{opacity:0;transform:scale(.94)}}
+.m{display:grid;grid-template-columns:1.1fr 1fr}
+.m .ph{min-height:420px;position:relative}
+.m .bd{padding:40px 36px;display:flex;flex-direction:column}
+.m h3{font-size:36px;margin:6px 0 14px}
+.m .desc{color:#424245;font-size:16px;margin-bottom:22px}
+.m .row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:26px}
+.m .row div{background:var(--soft);border-radius:16px;padding:12px 14px;font-size:12px;color:var(--ink-2)}
+.m .row b{display:block;color:var(--ink);font-size:16px;margin-top:2px}
+.m .price{font-size:32px;margin-bottom:18px}
+.x{position:absolute;top:14px;right:14px;z-index:2;width:36px;height:36px;border-radius:50%;background:rgba(0,0,0,.55);color:#fff;font-size:18px;display:grid;place-items:center}
+
+/* floating wa */
+.fab{position:fixed;right:20px;bottom:20px;z-index:60;width:58px;height:58px;border-radius:50%;background:var(--green);display:grid;place-items:center;box-shadow:0 10px 30px rgba(37,211,102,.45);transition:transform .2s}
+.fab:hover{transform:scale(1.08)}
+.fab svg{width:30px;height:30px;color:#fff}
+
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1)}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}*{animation:none!important;transition:none!important}}
+
+@media (max-width:900px){
+  .links{display:none}
+  .bento{grid-template-columns:repeat(2,1fr);grid-auto-rows:210px}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .steps,.quotes{grid-template-columns:1fr}
+  .m{grid-template-columns:1fr}.m .ph{min-height:260px}
+}
+@media (max-width:600px){
+  section{padding:80px 0}
+  .bento{grid-template-columns:1fr;grid-auto-rows:auto}
+  .tile{min-height:200px}
+  .t-big,.t-wide,.t-tall{grid-column:auto;grid-row:auto}
+  .t-big{min-height:380px}.tile.media{min-height:300px}
+  .grid{grid-template-columns:1fr}
+  .m .bd{padding:28px 22px}
+  .cta{margin:0 12px 80px;border-radius:30px}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mark" viewBox="0 0 256 256"><g fill="currentColor"><path d="M108 68C72 70 40 58 26 22C48 44 74 50 110 50C118 52 118 66 108 68Z M148 68C184 70 216 58 230 22C208 44 182 50 146 50C138 52 138 66 148 68Z"/><path fill-rule="evenodd" d="M84 80H172C190 80 196 92 194 108L188 150C204 162 210 178 206 194C200 220 170 228 128 228C86 228 56 220 50 194C46 178 52 162 68 150L62 108C60 92 66 80 84 80ZM91 128a9 9 0 1 0 18 0a9 9 0 1 0-18 0ZM147 128a9 9 0 1 0 18 0a9 9 0 1 0-18 0ZM96 194a10 14 0 1 0 20 0a10 14 0 1 0-20 0ZM140 194a10 14 0 1 0 20 0a10 14 0 1 0-20 0Z"/></g></symbol>
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.04 21.5h-.01a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.57.93.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.24-9.44 9.45-9.44 2.52 0 4.89.99 6.67 2.77a9.38 9.38 0 0 1 2.76 6.68c0 5.2-4.24 9.43-9.45 9.43m8.04-17.47A11.3 11.3 0 0 0 12.04.7C5.77.7.67 5.8.67 12.06c0 2 .52 3.96 1.52 5.68L.57 23.7l6.09-1.6a11.35 11.35 0 0 0 5.38 1.37h.01c6.27 0 11.37-5.1 11.37-11.37 0-3.04-1.18-5.89-3.33-8.04"/></symbol>
+</svg>
+
+<nav>
+  <div class="wrap">
+    <a href="#" class="logo"><svg><use href="#mark"/></svg><span>Sapodio<small>Lembu Pilihan</small></span></a>
+    <div class="links"><a href="#kenapa">Kenapa Kami</a><a href="#koleksi">Koleksi</a><a href="#cara">Cara Beli</a><a href="#soalan">Soalan Lazim</a></div>
+    <a class="btn btn-wa btn-sm" data-wa href="#"><svg class="wa-ico"><use href="#wa"/></svg>WhatsApp</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1595664652035-0956d50e0311?auto=format&fit=crop&w=1600&q=60" src="https://assets.mixkit.co/videos/10219/10219-720.mp4"></video>
+  <div class="hero-in wrap">
+    <span class="pill">🐄 Musim Korban 2027 — tempahan kini dibuka</span>
+    <h1>Lembu pilihan.<br><span class="grad">Terus dari ladang.</span></h1>
+    <p>Sihat, gemuk dan disahkan doktor veterinar. Pilih lembu kegemaran anda, tekan satu butang — urusan selebihnya kami jaga.</p>
+    <div class="ctas">
+      <a href="#koleksi" class="btn btn-light">Lihat Koleksi</a>
+      <a href="#" data-wa class="btn btn-wa"><svg class="wa-ico"><use href="#wa"/></svg>Tanya di WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<div class="strip">
+  <span>🩺 Disahkan Veterinar</span><span>🕌 Patuh Syarat Korban</span><span>⚖️ Timbang Depan Mata</span><span>🚚 Hantar ke Rumah</span><span>💚 1,200+ Pelanggan Puas Hati</span>
+</div>
+
+<section id="kenapa">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="eyebrow">Kenapa Sapodio</div>
+      <h2>Bukan sekadar lembu.<br>Ini lembu <span class="grad">Sapodio.</span></h2>
+      <p>Kami jaga setiap ekor macam keluarga sendiri — makan cukup, rehat cukup, sayang pun cukup.</p>
+    </div>
+    <div class="bento">
+      <div class="tile media t-big reveal">
+        <video autoplay muted loop playsinline src="https://assets.mixkit.co/videos/25114/25114-720.mp4"></video>
+        <div class="cap"><h3>Sihat dari hujung tanduk<br>sampai hujung ekor.</h3><p>Setiap lembu diperiksa doktor veterinar bertauliah sebelum sampai ke tangan anda.</p></div>
+      </div>
+      <div class="tile t-brand reveal">
+        <span class="ico">🌿</span><div class="stat">100%</div><p>Diberi makan rumput segar &amp; dedak berkhasiat.</p>
+      </div>
+      <div class="tile reveal">
+        <span class="ico">⚖️</span><h3>Timbang depan mata.</h3><p>Berat sebenar. Tiada cerita belakang.</p>
+      </div>
+      <div class="tile t-dark t-wide reveal">
+        <span class="ico">🕌</span><h3>Cukup umur, cukup syarat.</h3><p>Semua lembu korban berumur 2 tahun ke atas, sempurna fizikal dan bebas kecacatan.</p>
+      </div>
+      <div class="tile media t-tall reveal">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1502590464431-3b66d77494d7?auto=format&fit=crop&w=800&q=70" alt="Kawanan lembu di padang">
+        <div class="cap"><h3>Diternak bebas.</h3><p>Padang luas, angin segar, lembu happy.</p></div>
+      </div>
+      <div class="tile reveal">
+        <span class="ico">🚚</span><h3>Hantar sampai pintu.</h3><p>Percuma sekitar Lembah Klang.</p>
+      </div>
+      <div class="tile reveal">
+        <span class="ico">💳</span><h3>Deposit serendah RM300.</h3><p>Kunci lembu idaman awal-awal.</p>
+      </div>
+      <div class="tile reveal">
+        <span class="ico">📸</span><h3>Update setiap minggu.</h3><p>Gambar &amp; video lembu anda terus ke WhatsApp.</p>
+      </div>
+      <div class="tile media t-wide reveal">
+        <video autoplay muted loop playsinline src="https://assets.mixkit.co/videos/41404/41404-720.mp4"></video>
+        <div class="cap"><h3>Anak lembu pun ada. 🐮</h3><p>Sesuai untuk akikah dan mula ternak sendiri.</p></div>
+      </div>
+      <div class="tile reveal">
+        <span class="ico">🤝</span><h3>Sembelih &amp; agih.</h3><p>Pakej lengkap untuk surau &amp; masjid.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="koleksi">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="eyebrow">Koleksi Terkini</div>
+      <h2>Kenalan dengan<br>bintang ladang kami.</h2>
+      <p>Setiap ekor ada nama, ada cerita, ada harga yang jujur. Tekan gambar untuk kenal lebih dekat.</p>
+    </div>
+    <div class="chips" id="chips"></div>
+    <div class="grid" id="grid"></div>
+    <div class="pager" id="pager"></div>
+    <div class="count" id="count"></div>
+  </div>
+</section>
+
+<section class="film">
+  <video autoplay muted loop playsinline src="https://assets.mixkit.co/videos/31433/31433-720.mp4"></video>
+  <div class="in reveal">
+    <h2>Dari padang hijau<br>ke pintu rumah anda.</h2>
+    <p>Tanpa orang tengah. Tanpa kejutan harga.</p>
+  </div>
+</section>
+
+<section id="cara">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="eyebrow">Cara Beli</div>
+      <h2>Semudah 1, 2, 3.</h2>
+      <p>Tak perlu daftar akaun. Tak perlu borang panjang. Semua melalui WhatsApp.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="n">👆</div><h3>1. Pilih lembu</h3><p>Lihat koleksi, jatuh cinta dengan satu (atau dua) ekor.</p></div>
+      <div class="step reveal"><div class="n">💬</div><h3>2. WhatsApp kami</h3><p>Tekan "Beli" — mesej siap ditulis. Kami balas pantas, insya-Allah.</p></div>
+      <div class="step reveal"><div class="n">🏡</div><h3>3. Terima lembu</h3><p>Bayar deposit, kami jaga sampai hari penghantaran atau sembelihan.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--soft)">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="eyebrow">Kata Mereka</div>
+      <h2>Pelanggan senyum,<br>kami pun senyum.</h2>
+    </div>
+    <div class="quotes">
+      <div class="quote reveal"><div class="stars">★★★★★</div><p>"Lembu sampai lagi besar dari dalam gambar! Urusan korban surau kami jadi senang sangat tahun ni."</p><div class="who"><span class="av">🧕</span>Puan Rohana, Shah Alam</div></div>
+      <div class="quote reveal"><div class="stars">★★★★★</div><p>"Admin responsif, siap hantar video lembu tiap minggu. Rasa macam bela lembu sendiri."</p><div class="who"><span class="av">👨</span>Encik Faizal, Kajang</div></div>
+      <div class="quote reveal"><div class="stars">★★★★★</div><p>"Harga jujur, timbang depan mata. Dah tiga tahun ambil dari Sapodio, tak pernah kecewa."</p><div class="who"><span class="av">👳</span>Ustaz Hakim, Bangi</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="soalan">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="eyebrow">Soalan Lazim</div>
+      <h2>Ada soalan? Kami ada jawapan.</h2>
+    </div>
+    <div class="faq reveal">
+      <details><summary>Macam mana nak beli?</summary><p>Tekan butang "Beli" pada lembu pilihan anda. WhatsApp akan terbuka dengan mesej siap ditulis — hantar sahaja, team kami akan uruskan selebihnya.</p></details>
+      <details><summary>Boleh bayar deposit dulu?</summary><p>Boleh. Deposit serendah RM300 untuk tempah lembu, baki dijelaskan sebelum tarikh penghantaran atau sembelihan.</p></details>
+      <details><summary>Lembu korban cukup syarat ke?</summary><p>Semua lembu dalam kategori Korban berumur 2 tahun ke atas, sihat, sempurna fizikal dan diperiksa doktor veterinar.</p></details>
+      <details><summary>Boleh datang tengok lembu dulu?</summary><p>Sangat dialu-alukan! WhatsApp kami untuk tetapkan masa lawatan ke ladang.</p></details>
+      <details><summary>Ada servis sembelih dan lapah?</summary><p>Ada. Kami sediakan pakej sembelih, lapah dan agih daging untuk individu, surau dan masjid.</p></details>
+    </div>
+  </div>
+</section>
+
+<div class="cta reveal">
+  <svg class="big"><use href="#mark"/></svg>
+  <h2>Lembu idaman anda<br>sedang menunggu.</h2>
+  <p>Stok terhad setiap musim. Tempah awal, dapat pilihan terbaik.</p>
+  <a href="#" data-wa class="btn btn-wa"><svg class="wa-ico"><use href="#wa"/></svg>WhatsApp Sapodio Sekarang</a>
+</div>
+
+<footer>
+  <div class="wrap">
+    <a href="#" class="logo"><svg><use href="#mark"/></svg><span>Lembu Sapodio</span></a>
+    <span>© 2026 Lembu Sapodio. Diternak dengan kasih sayang 🐄</span>
+  </div>
+</footer>
+
+<a class="fab" data-wa href="#" aria-label="WhatsApp Sapodio"><svg><use href="#wa"/></svg></a>
+
+<dialog id="modal"></dialog>
+
+<script>
+const WA = "60123456789"; // TODO: tukar ke nombor WhatsApp sebenar
+const PER_PAGE = 6;
+const img = id => `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=900&q=70`;
+const rm = n => "RM" + n.toLocaleString("en-MY");
+const waLink = msg => `https://wa.me/${WA}?text=${encodeURIComponent(msg)}`;
+
+const cows = [
+  {name:"Abang Sado", breed:"Brahman", cat:"Korban", kg:480, age:"3 tahun", price:11800, img:"1595664652035-0956d50e0311", tag:"🔥 Paling Laris", desc:"Badan tegap, dada bidang, jalan pun macam model. Abang Sado ni memang jadi rebutan setiap musim korban — cepat sebelum orang lain sambar!"},
+  {name:"Mek Bunga", breed:"Kedah-Kelantan", cat:"Korban", kg:260, age:"2.5 tahun", price:6200, img:"1527153857715-3908f2bae5e8", tag:"🌸 Manja", desc:"Baka tempatan asli yang lasak dan sihat. Mek Bunga pemalu sikit, tapi daging dia — fuh, lembut dan manis. Sesuai untuk korban keluarga."},
+  {name:"Pak Belang", breed:"Friesian Kacuk", cat:"Baka", kg:420, age:"3 tahun", price:8900, img:"1570042225831-d98fa7577f1e", tag:"🐄 Ikonik", desc:"Corak hitam putih yang tak pernah lapuk. Pak Belang tenang, mudah dijaga dan sesuai untuk mula ternakan tenusu kecil-kecilan."},
+  {name:"Si Tompok", breed:"Simmental Kacuk", cat:"Korban", kg:390, age:"2.5 tahun", price:9400, img:"1596733430284-f7437764b1a9", tag:"✨ Baru Tiba", desc:"Tompok coklat-putih yang comel, tapi jangan tertipu — Si Tompok ni berat dan berisi. Pilihan bijak untuk korban 7 bahagian."},
+  {name:"Dato' Gagah", breed:"Brahman Kacuk", cat:"Korban", kg:520, age:"4 tahun", price:14500, img:"1595365691689-6b7b4e1970cf", tag:"👑 Premium", desc:"Raja segala raja di ladang Sapodio. Saiz besar, aura VIP. Untuk surau atau masjid yang nak korban paling gah tahun ni."},
+  {name:"Cik Manis", breed:"Kedah-Kelantan", cat:"Akikah", kg:190, age:"1.5 tahun", price:4200, img:"1598715685267-0f45367d8071", tag:"🍯 Bajet", desc:"Kecil molek, harga pun manis. Cik Manis sesuai untuk akikah si kecil atau kenduri doa selamat keluarga."},
+  {name:"Awang Hitam", breed:"Angus Kacuk", cat:"Korban", kg:450, age:"3 tahun", price:12600, img:"1546445317-29f4545e9d53", tag:"🖤 Jarang Ada", desc:"Kulit gelap berkilat, otot padu. Awang Hitam ni stok terhad — baka yang terkenal dengan daging marbling yang sedap."},
+  {name:"Kak Long", breed:"Friesian Kacuk", cat:"Baka", kg:400, age:"4 tahun", price:7800, img:"1564085352725-08da0272627d", tag:"🥛 Tenusu", desc:"Ibu penyayang yang dah terbukti produktif. Kak Long sesuai untuk penternak yang nak mula bisnes susu segar."},
+  {name:"Si Gebu", breed:"Limousin Kacuk", cat:"Korban", kg:430, age:"2.5 tahun", price:10900, img:"1618080206739-14e8ac105472", tag:"💪 Berisi", desc:"Gebu tapi bukan lemak — semua isi! Si Gebu ni baka Limousin yang terkenal dengan nisbah daging tinggi."},
+  {name:"Adik Coklat", breed:"Kedah-Kelantan", cat:"Akikah", kg:170, age:"1 tahun", price:3800, img:"1562863010-fabae474973d", tag:"🍫 Comel", desc:"Muda, aktif dan suka bergurau. Adik Coklat pilihan terbaik untuk akikah dengan bajet berpatutan."},
+  {name:"Panglima", breed:"Droughtmaster", cat:"Korban", kg:470, age:"3.5 tahun", price:12200, img:"1570460988350-23e05c32c45c", tag:"⚔️ Gagah", desc:"Baka tahan panas yang sesuai dengan cuaca Malaysia. Panglima berdiri megah — pasti jadi bualan jemaah."},
+  {name:"Tok Penghulu", breed:"Nellore", cat:"Korban", kg:500, age:"4 tahun", price:13800, img:"1563308294-6d63bb78d61e", tag:"🎖️ Senior", desc:"Paling berpengalaman di ladang. Tok Penghulu tenang, besar dan penuh karisma. Lembu korban yang penuh berkat."},
+  {name:"Si Comel", breed:"Jersey Kacuk", cat:"Akikah", kg:210, age:"2 tahun", price:4900, img:"1583364428520-fa6c5013c0c3", tag:"🥰 Kesayangan", desc:"Mata bulat, bulu lembut — staf ladang pun sayang nak lepas. Si Comel sesuai untuk akikah atau kenduri kecil."},
+  {name:"Raja Padang", breed:"Brahman", cat:"Baka", kg:460, age:"3 tahun", price:11200, img:"1620811004671-40b81b6f6978", tag:"🌾 Baka Jantan", desc:"Pejantan berkualiti untuk tingkatkan mutu kawanan anda. Rekod kesihatan lengkap dan genetik yang mantap."},
+  {name:"Mat Rock", breed:"Highland Kacuk", cat:"Baka", kg:350, age:"3 tahun", price:9800, img:"1522521612083-730fb19791c1", tag:"🎸 Unik", desc:"Rambut panjang, tanduk melengkung, gaya rockstar! Mat Rock memang lain dari yang lain — tarikan utama ladang mini anda."},
+].map((c, i) => ({...c, id: "SP" + String(i + 1).padStart(3, "0")}));
+
+const buyMsg = c => `Salam Sapodio! 🐄\nSaya berminat dengan lembu *${c.name}* (${c.id})\nBaka: ${c.breed} · ${c.kg}kg\nHarga: ${rm(c.price)}\n\nMasih ada lagi?`;
+document.querySelectorAll("[data-wa]").forEach(a => { a.href = waLink("Salam Sapodio! 🐄 Saya nak tanya tentang lembu yang ada."); a.target = "_blank"; a.rel = "noopener"; });
+
+const cats = ["Semua", "Korban", "Akikah", "Baka"];
+const catIco = {Semua:"🐄", Korban:"🕌", Akikah:"👶", Baka:"🌱"};
+let cat = "Semua", page = 1;
+const $ = id => document.getElementById(id);
+
+function render() {
+  const list = cat === "Semua" ? cows : cows.filter(c => c.cat === cat);
+  const pages = Math.ceil(list.length / PER_PAGE);
+  page = Math.min(page, pages);
+  $("chips").innerHTML = cats.map(k => `<button class="chip ${k === cat ? "on" : ""}" data-cat="${k}">${catIco[k]} ${k}</button>`).join("");
+  $("grid").innerHTML = list.slice((page - 1) * PER_PAGE, page * PER_PAGE).map((c, i) => `
+    <article class="cow" style="animation-delay:${i * 60}ms">
+      <div class="ph" data-id="${c.id}"><img loading="lazy" src="${img(c.img)}" alt="Lembu ${c.name}"><span class="tag">${c.tag}</span><span class="no">${c.id}</span></div>
+      <div class="bd">
+        <div class="breed">${c.breed}</div>
+        <h3>${c.name}</h3>
+        <div class="specs"><span>⚖️ ${c.kg} kg</span><span>🎂 ${c.age}</span><span>${catIco[c.cat]} ${c.cat}</span></div>
+        <div class="foot"><div class="price"><small>Harga</small>${rm(c.price)}</div>
+        <a class="btn btn-wa btn-sm" target="_blank" rel="noopener" href="${waLink(buyMsg(c))}"><svg class="wa-ico"><use href="#wa"/></svg>Beli</a></div>
+      </div>
+    </article>`).join("");
+  let p = `<button data-p="${page - 1}" ${page === 1 ? "disabled" : ""} aria-label="Sebelum">‹</button>`;
+  for (let i = 1; i <= pages; i++) p += `<button data-p="${i}" class="${i === page ? "on" : ""}">${i}</button>`;
+  $("pager").innerHTML = pages > 1 ? p + `<button data-p="${page + 1}" ${page === pages ? "disabled" : ""} aria-label="Seterusnya">›</button>` : "";
+  $("count").textContent = `Menunjukkan ${list.length ? (page - 1) * PER_PAGE + 1 : 0}–${Math.min(page * PER_PAGE, list.length)} daripada ${list.length} ekor lembu`;
+}
+
+$("chips").onclick = e => { const b = e.target.closest("[data-cat]"); if (b) { cat = b.dataset.cat; page = 1; render(); } };
+$("pager").onclick = e => { const b = e.target.closest("[data-p]"); if (b && !b.disabled) { page = +b.dataset.p; render(); $("koleksi").scrollIntoView(); } };
+$("grid").onclick = e => { const ph = e.target.closest("[data-id]"); if (ph) openCow(cows.find(c => c.id === ph.dataset.id)); };
+
+const modal = $("modal");
+function openCow(c) {
+  modal.innerHTML = `<div class="m">
+    <div class="ph"><img src="${img(c.img)}" alt="Lembu ${c.name}"><span class="tag">${c.tag}</span></div>
+    <div class="bd">
+      <button class="x" aria-label="Tutup">✕</button>
+      <div class="breed eyebrow">${c.breed} · ${c.id}</div>
+      <h3>${c.name}</h3>
+      <p class="desc">${c.desc}</p>
+      <div class="row"><div>⚖️ Berat<b>${c.kg} kg</b></div><div>🎂 Umur<b>${c.age}</b></div><div>${catIco[c.cat]} Kategori<b>${c.cat}</b></div><div>🩺 Kesihatan<b>Disahkan</b></div></div>
+      <div class="price">${rm(c.price)}</div>
+      <a class="btn btn-wa" target="_blank" rel="noopener" href="${waLink(buyMsg(c))}"><svg class="wa-ico"><use href="#wa"/></svg>Beli ${c.name} via WhatsApp</a>
+    </div></div>`;
+  modal.showModal();
+}
+modal.onclick = e => { if (e.target === modal || e.target.closest(".x")) modal.close(); };
+
+render();
+
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), {threshold: .12});
+document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+</script>
+</body>
+</html>
